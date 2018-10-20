@@ -1,0 +1,10 @@
+{
+    "name": "HotSOS",
+    "description": "NASA Space App Challenge",
+    "author": "grassjelly",
+    "dependencies": {
+        "express": "*",
+        "socket.io": "*"
+    },
+    "engine": "node >= 0.10.29"
+}

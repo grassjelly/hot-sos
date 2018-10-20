@@ -1,0 +1,207 @@
+.top {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  background-color: #c53234;
+}
+
+.bottom {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #c53234;
+}
+
+.text-block {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Primetime ╕ personal use only', sans-serif;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 479px) {
+  .body {
+    background-color: #fff;
+  }
+  .top {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    border-style: none;
+    background-color: #c53234;
+  }
+  .bottom {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-bottom: 24px;
+    background-color: #c53234;
+  }
+  .iconlinks {
+    width: 50px;
+    background-color: #fff;
+  }
+  .text-block {
+    width: 120px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .iconlink {
+    margin: 10px 42px;
+  }
+  .iconlink.w--current {
+    margin-bottom: 10px;
+  }
+  .image {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    margin-top: 140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .text-block-2 {
+    margin-top: 3px;
+    margin-right: 110px;
+    float: right;
+    font-family: 'Primetime ╕ personal use only', sans-serif;
+    color: #fff;
+    font-size: 20px;
+  }
+  .div-block {
+    margin-top: 13px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+  .image-2 {
+    margin-left: 110px;
+  }
+  .homecard {
+    display: block;
+    margin-top: 0px;
+  }
+  .feedcard {
+    display: block;
+    margin-top: 0px;
+    border-style: none;
+  }
+  .probstat {
+    position: static;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    margin: 60px auto 30px;
+  }
+  .feedphoto {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .image-3 {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .feedimage {
+    margin-top: 2px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .filler {
+    height: 100px;
+  }
+  .text-block-3 {
+    font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, sans-serif;
+  }
+  .userid {
+    margin-bottom: 2px;
+    margin-left: 8px;
+    float: left;
+    border-style: none;
+    font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, sans-serif;
+  }
+  .text-block-4 {
+    font-family: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal, sans-serif;
+  }
+  .userfeed {
+    margin-top: 20px;
+  }
+  .div-block-2 {
+    height: 40px;
+    border-style: none;
+  }
+  .title {
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 9px;
+  }
+  .image-4 {
+    width: 60px;
+  }
+  .socialicon {
+    margin: 5px;
+  }
+  .socialblock {
+    padding-left: 7px;
+  }
+  .div-block-3 {
+    height: 100px;
+  }
+  .mapcard {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+    padding: 52px 0px 0px;
+  }
+  .image-5 {
+    margin-top: 14px;
+  }
+  .link-block {
+    width: 40px;
+    height: 20px;
+  }
+  .map {
+    margin-top: 53px;
+  }
+  .image-6 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .div-block-4 {
+    position: static;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+  .image-7 {
+    margin-right: 0px;
+    padding-left: 0px;
+  }
+  .userphoto {
+    margin-left: 12px;
+    float: left;
+  }
+}
+
+@font-face {
+  font-family: 'Primetime ╕ personal use only';
+  src: url('../fonts/PRIMETIME-╕-PERSONAL-USE-ONLY.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
