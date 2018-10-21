@@ -4,6 +4,7 @@
     "author": "grassjelly",
     "dependencies": {
         "express": "*",
+        "keypress": "^0.2.1",
         "socket.io": "*"
     },
     "engine": "node >= 0.10.29"
