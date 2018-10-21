@@ -25,8 +25,8 @@
   </div>
   <div></div>
   <div class="homecard" id="home_card">
-    <div id="homecard" class="div-block-2"></div><img id="tree_status" class="probstat w-inline-block" onclick="showMap()" src="images/OK-TREE.png" width="350" height="350" >
-    <div class="w-container"><img onclick="changeStatus()" src="images/Screen-Shot-2018-10-20-at-7.56.48-PM.png" srcset="images/Screen-Shot-2018-10-20-at-7.56.48-PM-p-500.png 500w, images/Screen-Shot-2018-10-20-at-7.56.48-PM-p-800.png 800w, images/Screen-Shot-2018-10-20-at-7.56.48-PM-p-1080.png 1080w, images/Screen-Shot-2018-10-20-at-7.56.48-PM-p-1600.png 1600w, images/Screen-Shot-2018-10-20-at-7.56.48-PM.png 1978w" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" alt="" class="image-5"></div>
+    <div id="homecard" class="div-block-2"></div><img id="tree_status" class="probstat w-inline-block" onclick="showMap()" src="images/FIRE-ALERT.png" width="350" height="350" >
+    <div class="w-container"><img id="weather_data" onclick="changeStatus()" src="images/DURING-FIRE.jpg" " alt="" class="image-5"></div>
   </div>
   <div class="feedcard" id="feed_card" style="display:none">
     <div id="feedcard" class="div-block-2"></div>
@@ -46,7 +46,7 @@
     </div>
     <div class="div-block-3"></div>
   </div>
-  <div class="mapcard" style="display:none" id="map_card"><img onclick="changeStatus()" src="images/kmlsample.png" alt=""></div>
+  <div class="mapcard" style="display:none" id="map_card"><img onclick="changeStatus()" src="images/FIRE-LOCATION.jpg" alt=""></div>
   <input type="file" id="imgupload" style="display:none"/> 
 
   <div class="bottom"><a href="#homecard" class="iconlink w-inline-block"><img onclick="showHome()" src="images/HOME-WHITE.png" width="40" srcset="images/HOME-WHITE-p-500.png 500w, images/HOME-WHITE-p-800.png 800w, images/HOME-WHITE-p-1080.png 1080w, images/HOME-WHITE.png 1280w" sizes="40px" alt=""></a><a href="#feedcard" id="OpenImgUpload" class="iconlink w-inline-block"><img onclick="showFeed()" src="images/CAMERA-WHITE.png" width="40" srcset="images/CAMERA-WHITE-p-500.png 500w, images/CAMERA-WHITE.png 514w" sizes="40px" alt=""></a><a href="#feedcard" class="iconlink w-inline-block"><img onclick="showFeed()"src="images/NEWSPAPER-WHITE.png" width="40" srcset="images/NEWSPAPER-WHITE-p-500.png 500w, images/NEWSPAPER-WHITE-p-800.png 800w, images/NEWSPAPER-WHITE-p-1080.png 1080w, images/NEWSPAPER-WHITE-p-1600.png 1600w, images/NEWSPAPER-WHITE.png 2133w" sizes="40px" alt=""></a></div>
@@ -99,13 +99,20 @@
   }
 
   function changeStatus(){
-    if(index == 0)
+    if(index == 2){
       document.getElementById("tree_status").src = "images/OK-TREE.png";
-    else if(index == 1)
-      document.getElementById("tree_status").src = "images/NOT-SO-OK-TREE.png";
-    else if(index == 2)
-      document.getElementById("tree_status").src = "images/NOT_OK_TREE.png";
+      document.getElementById("weather_data").src = "images/Screen-Shot-2018-10-20-at-7.56.48-PM.png";
 
+    }
+    else if(index == 1){
+      document.getElementById("tree_status").src = "images/NOT-SO-OK-TREE.png";
+      document.getElementById("weather_data").src = "images/DURING-FIRE.jpg";
+
+    }
+    else if(index == 0){
+      document.getElementById("tree_status").src = "images/FIRE-ALERT.png";
+      document.getElementById("weather_data").src = "images/DURING-FIRE.jpg";
+    }
 
     index = index + 1;
     if(index == 3)
@@ -130,7 +137,7 @@
 
         break;
       case 'c':
-        document.getElementById("tree_status").src = 'images/NOT_OK_TREE.png';
+        document.getElementById("tree_status").src = 'images/FIRE-ALERT.png';
         break;
   }
 
